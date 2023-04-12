@@ -1,4 +1,4 @@
 # db_SalesClothes
 Elaborando la implementación de Sales Clothes con T-SQL
 
-![image](https://keep.google.com/u/0/media/v2/1JEas8SfdmRtRVX4Sz5AducMcgiE_wt3BaxPto-DCuQzSSP7tPNWw-CsiSA_dUd8/1LcW2l60CsaQOF7nNi3J5-Er-zYyEjCNb1TzEh31b8QDkImKeUpo6LA84Pp_qkTA?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp)
+![image](https://user-images.githubusercontent.com/55814963/231501560-9aa053f7-cf01-469c-8e17-76c822cbd7ef.png)
