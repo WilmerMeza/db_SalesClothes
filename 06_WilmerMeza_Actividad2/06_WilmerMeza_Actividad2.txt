@@ -58,8 +58,6 @@ SELECT * FROM INFORMATION_SCHEMA.TABLES;
 
 
 
-
-
 /* Crear tabla sale */
 CREATE TABLE sale (
     id int,
@@ -70,8 +68,7 @@ CREATE TABLE sale (
     CONSTRAINT sale_pk PRIMARY KEY  (id)
 );
 
-
-_____________________________
+____________________________
 /* Ver estructura de tabla sale */
 EXEC sp_columns @table_name = 'sale';
 
