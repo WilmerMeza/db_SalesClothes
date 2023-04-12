@@ -3,23 +3,19 @@ DROP DATABASE IF EXISTS db_SalesClothes;
 
 /* Crear base de datos Sales Clothes */
 CREATE DATABASE db_SalesClothes;
-
+_____________________________
 /* Poner en uso la base de datos */
 USE db_SalesClothes;
 
-
+_____________________________
 /* Poner en uso base de datos master */
 USE master;
 
-
+_____________________________
 /* Eliminar base de datos */
 DROP DATABASE db_SalesClothes;
 
-
-
-
-
-
+_____________________________
 /* Crear tabla client */
 CREATE TABLE client
 (
@@ -37,11 +33,11 @@ CREATE TABLE client
 
 /* Ver estructura de tabla client */
 EXEC sp_columns @table_name = 'client';
-
+_____________________________
 /* Listar tablas de la base de datos db_SalesClothes */
 SELECT * FROM INFORMATION_SCHEMA.TABLES;
 
-
+_____________________________
 /* Crear tabla clothes */
 CREATE TABLE clothes (
     id int,
@@ -75,7 +71,7 @@ CREATE TABLE sale (
 );
 
 
-
+_____________________________
 /* Ver estructura de tabla sale */
 EXEC sp_columns @table_name = 'sale';
 
@@ -83,9 +79,7 @@ EXEC sp_columns @table_name = 'sale';
 SELECT * FROM INFORMATION_SCHEMA.TABLES;
 
 
-
-
-
+_____________________________
 /* Crear tabla sale_detail */
 CREATE TABLE sale_detail (
     id int,
@@ -101,7 +95,6 @@ EXEC sp_columns @table_name = 'sale_detail';
 
 /* Listar tablas de la base de datos db_SalesClothes */
 SELECT * FROM INFORMATION_SCHEMA.TABLES;
-
 
 
 
@@ -160,8 +153,7 @@ ALTER TABLE sale
       ON DELETE CASCADE
 GO
 
-
-
+_____________________________
 /* Ver relaciones creadas entre las tablas de la base de datos */
 SELECT 
     fk.name [Constraint],
@@ -174,9 +166,8 @@ FROM
     INNER JOIN sys.foreign_key_columns fc ON (fk.OBJECT_ID = fc.constraint_object_id)
 GO
 
-
-
-/* Eliminar una relación */
+_____________________________
+/* Eliminar una relaciÃ³n */
 ALTER TABLE sale
 	DROP CONSTRAINT sale_client
 GO
